@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ParallelStreamGroupSum extends GroupSum{
-    // TODO Homework use parallel streams
     public ParallelStreamGroupSum(int[][] numberGroups) {
         super(numberGroups);
     }

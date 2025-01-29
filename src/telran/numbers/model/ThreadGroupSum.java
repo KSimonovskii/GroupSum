@@ -7,7 +7,6 @@ import java.util.List;
 
 public class ThreadGroupSum extends GroupSum {
 
-    //TODO Homeworks, use pure Threads
     public ThreadGroupSum(int[][] numberGroups) {
         super(numberGroups);
     }

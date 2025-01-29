@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.concurrent.*;
 
 public class ExecutorGroupSum extends GroupSum{
-    //TODO Homework use ExecutorService
     public ExecutorGroupSum(int[][] numberGroups) {
         super(numberGroups);
     }
