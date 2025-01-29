@@ -17,9 +17,7 @@ public class ExecutorGroupSum extends GroupSum{
     @Override
     public int computeSum() {
 
-        List<OneGroupSum> groups = Arrays.stream(numberGroups)
-                .map(OneGroupSum::new)
-                .toList();
+        List<OneGroupSum> groups = getListOfGroups();
 
         ExecutorService pool = Executors.newWorkStealingPool();
         for (OneGroupSum group: groups) {

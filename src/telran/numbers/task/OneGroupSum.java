@@ -1,7 +1,6 @@
 package telran.numbers.task;
 
 import java.util.Arrays;
-import java.util.concurrent.Callable;
 
 public class OneGroupSum implements Runnable {
 
@@ -20,4 +19,6 @@ public class OneGroupSum implements Runnable {
     public void run() {
         sum = Arrays.stream(group).sum();
     }
+
+
 }

@@ -14,9 +14,8 @@ public class ThreadGroupSum extends GroupSum {
 
     @Override
     public int computeSum() {
-        List<OneGroupSum> groups = Arrays.stream(numberGroups)
-                .map(OneGroupSum::new)
-                .toList();
+        List<OneGroupSum> groups = getListOfGroups();
+
         List<Thread> threads = groups.stream()
                 .map(Thread::new)
                 .toList();
